@@ -1,0 +1,1 @@
+Plugin Crypto - Full Gauge
