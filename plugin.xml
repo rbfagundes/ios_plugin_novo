@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="br.com.fullgauge.sitradmobile"
-        version="0.7.0">
+        version="0.0.3">
 
   <name>SitradMobilePlugin</name>
 
@@ -9,10 +9,10 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/crypto.js" target="js/crypto.js"/>
+  <asset src="www/Crypto.js" target="js/Crypto.js"/>
 
-  <js-module src="www/crypto.js" name="crypto">
-    <clobbers target="crypto" />
+  <js-module src="www/Crypto.js" name="Crypto">
+    <clobbers target="cordova.plugins.Crypto" />
   </js-module>
 
   <platform name="ios">
@@ -23,10 +23,10 @@
       </feature>
     </config-file>
 
-    <header-file src="src/ios/Crypto.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/Crypto.m" target-dir="HelloPlugin"/>
-    <header-file src="src/ios/Base64.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/Base64.m" target-dir="HelloPlugin"/> 
+    <header-file src="src/ios/Crypto.h"/>
+    <source-file src="src/ios/Crypto.m"/>
+    <header-file src="src/ios/Base64.h"/>
+    <source-file src="src/ios/Base64.m"/> 
   </platform>
 
 </plugin>
